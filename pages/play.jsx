@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 import Read from '../components/contractRead'
 
@@ -8,9 +8,12 @@ import List from '../components/List';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from '../components/Navbar';
 import Footer from '../components/Footer';
+
+
+
 function Wallet() {
   return (
-    <div className="bg-dark text-light">
+    <div className="container-fluid bg-dark text-light">
       
     <Nav/>
       <Balance />

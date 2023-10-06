@@ -1,0 +1,19 @@
+.page-container {
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add spacing at the bottom to push the footer to the bottom */
+  .page-container::before {
+    content: "";
+    flex: 1;
+  }
+  
+  .Footer {
+    /* Sticky footer styles */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  

@@ -15,7 +15,7 @@ function Testnet() {
         </p>
         <li>Buy a bag for 0.01 SEP.</li>
         <p>
-          You can purchase a bag for 0.01 SEP. This purchase contributes to the game's jackpot.
+          You can purchase a bag for 0.01 SEP. This purchase contributes to the games jackpot.
         </p>
         <li>Buy more bags to improve your chances of winning.</li>
         <p>
@@ -28,7 +28,7 @@ function Testnet() {
         In this game, players buy bags for 0.01 SEP, and the SEP goes into the jackpot. The more bags you purchase, the higher your chances of winning the jackpot.
       </p>
       <p>
-        The jackpot is the sum of all buy-ins during the duration of the game, typically lasting for 5 minutes. At the end of the game, a random winner is selected from all participants, and they receive 90% of the jackpot immediately.
+        The jackpot is the sum of all buy-ins during the duration of the game, typically lasting for 5 minutes. At the end of the game, a random winner is selected from all participants, and they receive 90Percent of the jackpot immediately.
       </p>
     </div>
   );

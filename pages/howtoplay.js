@@ -3,41 +3,46 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from '../components/Navbar';
+import Footer from '../components/Footer';
+import '../styles/Home.module.css'
 import Testnet from '../components/testnet';
-import Footer from '../components/Footer'
+
 
 const GameExplanation = () => {
   return (
-    <div>
-    <Nav/>
-    <div className="game-explanation bg-dark text-light p-4 rounded">
-     
-      <h2 className="mb-4">🎮 Welcome to "EtherRush: The 5-Minute Fortune Hunt" 🎮 </h2>
-      <p>Step into the thrilling world of our Ethereum-based game! Here's how it all works:</p>
+    <div className="page-container">
+      <Nav />
+      <h2>How to Play</h2>
+      <p>
+        To play our exciting game, follow these steps:
+      </p>
       <ul>
         <li>
-          <strong>How to Play:</strong> Purchase your entry tickets for just 0.01 ETH. 💰
+          <strong>Step 1:</strong> Purchase your entry tickets for just 0.01 ETH. &nbsp;💰
         </li>
         <li>
-          <strong>The Exciting Part:</strong> Every 0.01 ETH entry fee contributes to the ever-growing jackpot! 🌟
+          <strong>Step 2:</strong> Every 0.01 ETH entry fee contributes to the ever-growing jackpot! &nbsp;🌟
         </li>
         <li>
-          <strong>The Countdown:</strong> But here's the twist: the game only lasts for 5 minutes! The adrenaline is real as the clock counts down, and the excitement builds. ⏲️
+          <strong>Step 3:</strong> The game only lasts for 5 minutes! The adrenaline is real as the clock counts down, and the excitement builds. &nbsp;⏲️
         </li>
         <li>
-          <strong>The Big Reveal:</strong> Once the timer hits zero, the magic happens! A lucky winner is chosen completely at random from all the brave participants. 🎩✨
+          <strong>Step 4:</strong> Once the timer hits zero, the magic happens! A lucky winner is chosen completely at random from all the brave participants. &nbsp;🎩✨
         </li>
         <li>
-          <strong>The Thrilling Prize:</strong> And guess what? The winner takes home a whopping 90% of the entire pot! It's your chance to strike it rich! 💎🤑
+          <strong>Step 5:</strong> The winner takes home a whopping 90% of the entire pot! It's your chance to strike it rich! &nbsp;💎🤑
         </li>
       </ul>
-      <p>Are you ready to test your luck and walk away with a life-changing reward? Get in on the action now and experience the thrill of our Ethereum game! Who knows, you could be the next big winner! 🚀</p>
-      
-      <Testnet/>
-      <Footer/>
-    </div>
+      <p>
+        Get ready to test your luck and experience the thrill of our Ethereum game! Who knows, you could be the next big winner! &nbsp;🚀
+      </p>
+      <Testnet />
+      <Footer />
     </div>
   );
 };
 
 export default GameExplanation;
+
+
+

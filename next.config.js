@@ -7,4 +7,8 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  ...nextConfig,
+  distDir: 'build', // Specify your custom output directory name here
+  // Other Next.js configuration options...
+};

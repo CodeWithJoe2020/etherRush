@@ -4,10 +4,10 @@ import Image from 'next/image'
 function Stakead() {
   return (
     <div>
-        <img
-          src="stake50.gif"
-          width={350}
-          height={200}
+        <Image
+          src="/stake50.gif"
+          width={320}
+          height={50}
           alt="stake.com"
           onError={(e) => console.error('Error loading image', e)}
         />

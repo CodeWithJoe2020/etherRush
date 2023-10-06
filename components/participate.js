@@ -1,10 +1,11 @@
 import React from "react";
 import lottoABI from '../abis/lottoABI.json';
 
-import { useContractWrite, usePrepareContractWrite ,useWaitForTransaction} from 'wagmi'
+import { useContractWrite, usePrepareContractWrite ,useWaitForTransaction, useBalance, useAccount} from 'wagmi'
 import { parseEther } from "viem";
  
 function Buy() {
+  const { address} = useAccount();
     const { config} = usePrepareContractWrite({
       address: '0x183E82eFb216c3c986A20305F7CF83f51b77259a',
       abi: lottoABI,
@@ -19,6 +20,11 @@ function Buy() {
         confirmations: 1,
       });
       console.log(waitForTransaction)
+
+      const { data:balancedata  } = useBalance({
+        address: address,
+        watch: true,
+      })
   
     return (
         <>
@@ -30,6 +36,7 @@ function Buy() {
       >
         💰 BUY 💰
       </button>
+      {/* <p style={{ fontSize: '18px', color: 'white' }}>{parseFloat(balancedata.formatted).toFixed(4)} {balancedata?.symbol}</p> */}
         {error && (
           <div>An error occurred: {error.message}</div>
         )}

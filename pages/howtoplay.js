@@ -30,7 +30,7 @@ const GameExplanation = () => {
           <strong>Step 4:</strong> Once the timer hits zero, the magic happens! A lucky winner is chosen completely at random from all the brave participants. &nbsp;🎩✨
         </li>
         <li>
-          <strong>Step 5:</strong> The winner takes home a whopping 90% of the entire pot! It's your chance to strike it rich! &nbsp;💎🤑
+          <strong>Step 5:</strong> The winner takes home a whopping 90% of the entire pot! Its your chance to strike it rich! &nbsp;💎🤑
         </li>
       </ul>
       <p>
